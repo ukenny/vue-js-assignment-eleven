@@ -4,9 +4,12 @@
     <!-- Build a local Filter which reverses the Text it is applied on -->
     <h1>Exercise 1</h1>
     <h3>{{ exerciseOneText | reverseText }}</h3>
+
     <!-- Exercise 2 -->
     <!-- Build a global Filter which counts the length of a word and it appends it -->
     <!-- Like this: "Test" => Gets Filtered to => "Test (4)" -->
+    <h1>Exercise 2</h1>
+    <h3>{{ exerciseTwoText | appendLength }}</h3>
 
     <!-- Exercise 3 -->
     <!-- Do the same as in Exercises 1 & 2, now with Computed Properties -->
@@ -21,7 +24,8 @@ export default {
   name: "app",
   data: function() {
     return {
-      exerciseOneText: "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+      exerciseOneText: "a b c d e f g h i j k l m n o p q r s t u v w x y z",
+      exerciseTwoText: "Example"
     };
   },
   filters: {
