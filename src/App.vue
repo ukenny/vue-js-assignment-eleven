@@ -20,10 +20,14 @@
     <hr />
     <!-- Exercise 4 -->
     <!-- Share the Computed Property rebuilding Exercise 2 via a Mixin -->
+    <h1>Exercise 4</h1>
+    <h3>{{ textReverserComputed }}</h3>
   </div>
 </template>
 
 <script>
+import { ReverseTextMixin } from "./ReverseTextMixin.js";
+
 export default {
   name: "app",
   data: function() {
@@ -51,7 +55,8 @@ export default {
         .join("");
     }
   },
-  components: {}
+  components: {},
+  mixins: [ReverseTextMixin]
 };
 </script>
 
